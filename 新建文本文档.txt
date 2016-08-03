@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$(".nav li").each(function(index){
+		$(this).click(function(){
+			$("div.click").removeClass("click");
+			$("li.tabin").removeClass("tabin");
+			$("div").eq(index).addClass("click");
+			$(this).addClass("tabin");
+		})
+	})
+})
